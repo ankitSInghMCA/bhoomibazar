@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper v11 Hover Pause</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    .swiper {
+      width: 100%;
+      height: 400px;
+    }
+    .swiper-slide {
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Swiper -->
+<div class="swiper new-swiper-container">
+    
+        <div class="swiper-wrapper tp-gallery-titming">
+           <div class="swiper-slide">
+             <div class="tp-gallery-item video-container">
+               <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+               <!-- <div class="video-overlay">
+                 <h4 class="text-white">Business Ideas 1</h4>
+                 <p class="text-white">Learn how to start a business in real estate with Professor Guru Brar.</p>
+               </div> -->
+             </div>
+           </div>
+           <div class="swiper-slide">
+             <div class="tp-gallery-item video-container">
+               <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+               <!-- <div class="video-overlay">
+                 <h4 class="text-white"><span>3</span>Bhk for sell</h4>
+                 <p class="text-white">
+                   <span><img src="/api/placeholder/40/40" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;"></span>
+                   Mahipal Chaoudhray
+                 </p>
+               </div> -->
+             </div>
+           </div>
+           <div class="swiper-slide">
+             <div class="tp-gallery-item video-container">
+               <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+               <!-- <div class="video-overlay">
+                 <h4 class="text-white">Business Ideas 3</h4>
+                 <p class="text-white">Learn how to start a business in real estate and other fields.</p>
+               </div> -->
+             </div>
+           </div>
+           <div class="swiper-slide">
+              <div class="tp-gallery-item video-container">
+                <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+                <!-- <div class="video-overlay">
+                  <h4 class="text-white"><span>3</span>Bhk for sell</h4>
+                  <p class="text-white">
+                    <span><img src="/api/placeholder/40/40" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%;"></span>
+                    Mahipal Chaoudhray
+                  </p>
+                </div> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tp-gallery-item video-container">
+                <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+                <!-- <div class="video-overlay">
+                  <h4 class="text-white">Business Ideas 3</h4>
+                  <p class="text-white">Learn how to start a business in real estate and other fields.</p>
+                </div> -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tp-gallery-item video-container">
+                <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+                <!-- <div class="video-overlay">
+                  <h4 class="text-white">Business Ideas 4</h4>
+                  <p class="text-white">Learn how to start a business in real estate with Professor Guru Brar.</p>
+                </div> -->
+              </div>
+            </div>
+           <div class="swiper-slide">
+             <div class="tp-gallery-item video-container">
+               <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+               <!-- <div class="video-overlay">
+                 <h4 class="text-white">Business Ideas 4</h4>
+                 <p class="text-white">Learn how to start a business in real estate with Professor Guru Brar.</p>
+               </div> -->
+             </div>
+           </div>
+           <div class="swiper-slide">
+             <div class="tp-gallery-item video-container">
+               <video src="assets/video/video.mp4"  style="max-width: 100%;" preload="metadata" muted loop playsinline></video>
+               <!-- <div class="video-overlay">
+                 <h4 class="text-white">Business Ideas 5</h4>
+                 <p class="text-white">Learn how to start a business in real estate with Professor Guru Brar.</p>
+               </div> -->
+             </div>
+           </div>
+         </div>
+     
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- Navigation buttons -->
+  <div class="tp-testimonial-prev">Prev</div>
+  <div class="tp-testimonial-next">Next</div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.new-swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.tp-testimonial-next',
+        prevEl: '.tp-testimonial-prev',
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          const videos = document.querySelectorAll('.swiper-slide video');
+          videos.forEach(video => {
+            video.pause();
+            video.currentTime = 0;
+          });
+        }
+      }
+    });
+
+    // Pause and resume autoplay on hover
+    const swiperContainer = document.querySelector('.new-swiper-container');
+
+    swiperContainer.addEventListener('mouseenter', () => {
+      swiper.autoplay.stop();
+    });
+
+    swiperContainer.addEventListener('mouseleave', () => {
+      swiper.autoplay.start();
+    });
+
+    // Play/pause videos on hover inside slides
+    const videos = document.querySelectorAll('.swiper-slide video');
+    videos.forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        video.play();
+      });
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
