@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/custom-animation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+     <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+    <STYLE>
+
+        .wp-block-motive-newsroom-categories .categories-link {
+    padding-bottom: 42px;
+    padding-top: 42px;
+}
+        .wp-block-motive-newsroom-categories .categories-link a.is-selected {
+    color: #000;
+}
+.wp-block-phoenix-blocks-spacer.image-and-body-spacing {
+    height: 30px;
+}
+.wp-block-phoenix-blocks-spacer.h1-and-subtitle-spacing {
+    height: 42px;
+}
+.wp-block-motive-newsroom-categories .categories-link a {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    line-height: -.01rem;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-decoration: none;
+}
+        .wp-block-motive-newsroom-articles .news-header {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            border-bottom: 2px solid #000;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: space-between
+        }
+        p{
+            margin-bottom: 0px;
+        }
+        @media(max-width: 1023.98px) {
+            .wp-block-motive-newsroom-articles .news-header {
+                border-bottom: 2px solid #e6e6e6
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .block-title {
+            display: inline-block
+        }
+
+        @media(max-width: 1023.98px) {
+            .wp-block-motive-newsroom-articles .block-title {
+                display: none
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-articles {
+            padding-bottom: 60px;
+            padding-top: 28px
+        }
+
+        .wp-block-motive-newsroom-articles .news-article {
+            border-bottom: 1px solid #e6e6e6;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-bottom: 12px;
+            padding-top: 12px
+        }
+
+        @media(max-width: 767.98px) {
+            .wp-block-motive-newsroom-articles .news-article {
+                display: block;
+                padding-bottom: 60px;
+                padding-top: 40px
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-image {
+            height: auto;
+            min-width: 281px;
+            width: 281px
+        }
+
+        @media(max-width: 767.98px) {
+            .wp-block-motive-newsroom-articles .news-image {
+                height: auto;
+                width: 100%
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-content {
+            padding-left: 28px
+        }
+
+        .wp-block-motive-newsroom-articles .news-content:hover {
+            color: #000
+        }
+
+        @media(max-width: 767.98px) {
+            .wp-block-motive-newsroom-articles .news-content {
+                padding-left: 0
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-content .news-category {
+            color: #02154d;
+            font-size: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-bottom: 6px;
+            padding-top: 17px
+        }
+
+        @media(max-width: 1023.98px) {
+            .wp-block-motive-newsroom-articles .news-content .news-category {
+                padding-top: 24px
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-content .news-date {
+            color: #999;
+            font-size: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-bottom: 12px
+        }
+
+        .wp-block-motive-newsroom-articles .news-content a {
+            text-decoration: none
+        }
+
+        .wp-block-motive-newsroom-articles .news-content a h4 {
+            color: inherit
+        }
+
+        .wp-block-motive-newsroom-articles .news-link {
+            display: none;
+            font-size: 16px;
+            font-size: 1.3333333333rem;
+            padding-top: 32px
+        }
+
+        @media(max-width: 767.98px) {
+            .wp-block-motive-newsroom-articles .news-link {
+                display: block
+            }
+        }
+
+        .wp-block-motive-newsroom-articles .news-link img {
+            padding-left: 12px
+        }
+
+        .wp-block-motive-newsroom-articles .sort-icon {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg)
+        }
+
+        .wp-block-motive-newsroom-articles .dropbtn {
+            background: 0 0;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            font-size: 1.3333333333rem;
+            font-weight: 500;
+            padding-bottom: 18px;
+            padding-left: 0
+        }
+
+        .wp-block-motive-newsroom-articles .dropbtn .sort-icon {
+            margin-left: 14px;
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+            -webkit-transition: -webkit-transform .2s ease-in-out;
+            transition: -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+            transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
+        }
+
+        .wp-block-motive-newsroom-articles .dropdown {
+            border: none;
+            display: inline-block;
+            margin-top: 15px
+        }
+
+        .wp-block-motive-newsroom-articles .dropdown-content {
+            background-color: #fff;
+            border-top: 2px solid #000;
+            -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+            display: none;
+            min-width: 100%;
+            padding: 16px 0 4px 7px;
+            position: absolute;
+            z-index: 1
+        }
+        a {
+    color: #010101;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -.005rem;
+    line-height: 150%;
+    /* text-decoration: underline; */
+    text-underline-offset: 2px;
+}
+.new-image-banner-newsroom img{
+    border-radius: 10px;
+    box-shadow: 0 20px 25px -25px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+   
+}
+.swiper-pagination {
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      margin-top: 20px;
+    }
+    </STYLE>
+</head>
+
+<body>
+
+    <!-- pre loader area start -->
+    <!-- <div id="loading" class="preloader-wrap">
+        <div class="preloader-2 text-center">
+           <span class="line line-1"></span>
+           <span class="line line-2"></span>
+           <span class="line line-3"></span>
+           <span class="line line-4"></span>
+           <span class="line line-5"></span>
+           <span class="line line-6"></span>
+           <span class="line line-7"></span>
+           <span class="line line-8"></span>
+           <span class="line line-9"></span>
+           <div class="loader-text">Loading ...</div>
+        </div>
+     </div> -->
+    <!-- pre loader area end -->
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+    <!-- tp-offcanvus-area-end -->
+    <div class="tp-offcanvas-area">
+        <div class="tp-offcanvas-wrapper">
+            <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+                <div class="tp-offcanvas-logo">
+                    <a href="index-3.html">
+                        <img class="logo-1" src="assets/img/logo/logo.png" alt="">
+                        <img class="logo-2" src="assets/img/logo/logo-white.png" alt="">
+                    </a>
+                </div>
+                <div class="tp-offcanvas-close">
+                    <button class="tp-offcanvas-close-btn">
+                        <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tp-offcanvas-main">
+                <div class="tp-offcanvas-content">
+                    <h3 class="tp-offcanvas-title">Hello There!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                </div>
+                <div class="tp-main-menu-mobile d-xl-none"></div>
+                <div class="tp-offcanvas-gallery">
+                    <div class="row gx-2">
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-2.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="tp-offcanvas-gallery-img fix">
+                                <a href="#"><img src="assets/img/menu/offcanvas/offcanvas-4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-offcanvas-contact">
+                    <h3 class="tp-offcanvas-title sm">Information</h3>
+
+                    <ul>
+                        <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
+                        <li><a href="mailto:hello@diego.com">hello@diego.com</a></li>
+                        <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+                    </ul>
+                </div>
+                <div class="tp-offcanvas-social">
+                    <h3 class="tp-offcanvas-title sm">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.6016 7.5907C10.6818 8.13166 10.5894 8.68414 10.3375 9.16955C10.0856 9.65497 9.68711 10.0486 9.19862 10.2945C8.71014 10.5404 8.15656 10.6259 7.61663 10.5391C7.0767 10.4522 6.57791 10.1972 6.19121 9.81055C5.80451 9.42385 5.54959 8.92506 5.46271 8.38513C5.37583 7.8452 5.46141 7.29163 5.70728 6.80314C5.95315 6.31465 6.34679 5.91613 6.83221 5.66425C7.31763 5.41238 7.87011 5.31998 8.41107 5.4002C8.96287 5.48202 9.47372 5.73915 9.86817 6.1336C10.2626 6.52804 10.5197 7.0389 10.6016 7.5907Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.5742 4.42578H11.5842" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.50589 12.7494C4.57662 16.336 9.16278 17.5648 12.7494 15.4941C14.2113 14.65 15.2816 13.388 15.8962 11.9461C16.7895 9.85066 16.7208 7.37526 15.4941 5.25063C14.2674 3.12599 12.1581 1.82872 9.89669 1.55462C8.34063 1.366 6.71259 1.66183 5.25063 2.50589C1.66403 4.57662 0.435172 9.16278 2.50589 12.7494Z"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M12.7127 15.4292C12.7127 15.4292 12.0086 10.4867 10.5011 7.87559C8.99362 5.26451 5.28935 2.57155 5.28935 2.57155M5.68449 15.6124C6.79553 12.2606 12.34 8.54524 16.3975 9.43537M12.311 2.4082C11.1953 5.72344 5.75732 9.38453 1.71875 8.58915"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 5.5715H6.33342C7.62867 5.5715 8.61917 6.56199 8.61917 7.85725C8.61917 9.15251 7.62867 10.143 6.33342 10.143H1.76192C1.30477 10.143 1 9.83823 1 9.38108V1.76192C1 1.30477 1.30477 1 1.76192 1H5.5715C6.86676 1 7.85725 1.99049 7.85725 3.28575C7.85725 4.58101 6.86676 5.5715 5.5715 5.5715H1Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path
+                                        d="M10.9062 7.09454H17.0016C17.0016 5.41832 15.6301 4.04688 13.9539 4.04688C12.2777 4.04688 10.9062 5.41832 10.9062 7.09454ZM10.9062 7.09454C10.9062 8.77076 12.2777 10.1422 13.9539 10.1422H15.2492"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.1125 1.44434H11.668" stroke="currentColor" stroke-width="1.2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.75 13H5.25C3 13 1.5 11.5 1.5 9.25V4.75C1.5 2.5 3 1 5.25 1H12.75C15 1 16.5 2.5 16.5 4.75V9.25C16.5 11.5 15 13 12.75 13Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M8.70676 5.14837L10.8006 6.40465C11.5543 6.90716 11.5543 7.66093 10.8006 8.16344L8.70676 9.41972C7.86923 9.92224 7.19922 9.50348 7.19922 8.5822V6.06964C7.19922 4.98086 7.86923 4.64585 8.70676 5.14837Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+    <!-- cart mini area start -->
+    <div class="cartmini__area">
+        <div class="cartmini__wrapper d-flex justify-content-between flex-column">
+            <div class="cartmini__top-wrapper">
+                <div class="cartmini__top p-relative">
+                    <div class="cartmini__top-title">
+                        <h4>Shopping cart</h4>
+                    </div>
+                    <div class="cartmini__close">
+                        <button type="button" class="cartmini__close-btn cartmini-close-btn"><i
+                                class="fal fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="cartmini__shipping">
+                    <p> Free Shipping for all orders over <span>$50</span></p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="cartmini__widget">
+                    <div class="cartmini__widget-item">
+                        <div class="cartmini__thumb">
+                            <a href="shop-details.html">
+                                <img src="assets/img/inner-blog/blog-sidebar/rc-post/rc-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="cartmini__content">
+                            <h5 class="cartmini__title"><a href="shop-details.html">Level Bolt Smart Lock</a></h5>
+                            <div class="cartmini__price-wrapper">
+                                <span class="cartmini__price">$46.00</span>
+                                <span class="cartmini__quantity">x2</span>
+                            </div>
+                        </div>
+                        <a href="#" class="cartmini__del"><i class="fa-regular fa-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cartmini__checkout">
+                <div class="cartmini__checkout-title mb-30">
+                    <h4>Subtotal:</h4>
+                    <span>$113.00</span>
+                </div>
+                <div class="cartmini__checkout-btn">
+                    <a href="cart.html" class="tp-btn-black-2 text-center mb-10 w-100"> view cart</a>
+                    <a href="checkout.html" class="tp-btn-black-2 text-center w-100"> checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart mini area end -->
+
+    <script src="assets/js/header.js"></script>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+                <section>
+                    <div class="swiper myNewsroomSwiper container">
+                      <div class="swiper-wrapper">
+                  
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                          <div class="row">
+                            <div class="col-lg-6 new-text-benner-newsroom">
+                              <span>Featured Products</span>
+                              <h5>The freight recession is getting worse as the economy detoxes from the pandemic trucking boom</h5>
+                              <a href="#" target="_blank" rel="noreferrer noopener">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-lg-5">
+                              <div class="new-image-banner-newsroom">
+                                <img src="assets/img/inner-service/hero/hero-1-2.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Repeat slides as needed -->
+                        <div class="swiper-slide">
+                          <div class="row">
+                            <div class="col-lg-6 new-text-benner-newsroom">
+                              <span>Featured Products</span>
+                              <h5>The freight recession is getting worse as the economy detoxes from the pandemic trucking boom</h5>
+                              <a href="#" target="_blank" rel="noreferrer noopener">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="col-lg-5">
+                              <div class="new-image-banner-newsroom">
+                                <img src="assets/img/inner-service/hero/hero-1-2.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Add more slides here -->
+                        <div class="swiper-slide">
+                            <div class="row">
+                              <div class="col-lg-6 new-text-benner-newsroom">
+                                <span>Featured Products</span>
+                                <h5>The freight recession is getting worse as the economy detoxes from the pandemic trucking boom</h5>
+                                <a href="#" target="_blank" rel="noreferrer noopener">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                              </div>
+                              <div class="col-lg-5">
+                                <div class="new-image-banner-newsroom">
+                                  <img src="assets/img/inner-service/hero/hero-1-2.jpg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  
+                      <!-- Pagination -->
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </section>
+                 
+                <div class="wp-block-phoenix-blocks-grid container pt-110">
+                    <div
+                        class="wp-block-phoenix-blocks-grid-row row align-items-stretch justify-content-start flex-column-reverse flex-md-row p-0">
+                        <div class="wp-block-phoenix-blocks-grid-col col col-md-8 col-sm-12 col-12 p-0">
+                            <div class="wp-block-motive-newsroom-articles container p-0">
+                                <div>
+                                    <div class="news-header align-items-center">
+                                        <h2 id="header-news" class="block-title">Press releases and articles</h2>
+                                        <div class="dropdown"><button class="dropbtn">Sort by<img class="sort-icon"
+                                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxMCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguOTIxODggMUwxLjk5OTg5IDcuOTIxOThMOC45MjE4NyAxNC44NDQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMi4xMiIvPgo8L3N2Zz4K"
+                                                    alt="sort_by_icon"></button>
+                                            <div class="dropdown-content"><button class="">Newest</button><button
+                                                    class="is-selected">Oldest</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="news-articles">
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/VentureBeat.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=162">
+                                                    <p class="news-category">Media coverage</p>
+                                                </a>
+                                                <p class="news-date">08/12/2021</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">Motive (formerly KeepTruckin) uses Ambarella
+                                                        AI chips to
+                                                        monitor truck drivers</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read article<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/TheSoftware-Report.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=162">
+                                                    <p class="news-category">Media coverage</p>
+                                                </a>
+                                                <p class="news-date">08/23/2021</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">The Top 50 SaaS CEOs of 2021</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read article<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/KeepTruckin.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=163">
+                                                    <p class="news-category">Press releases</p>
+                                                </a>
+                                                <p class="news-date">02/15/2022</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">KeepTruckin’s Electronic Logging Device
+                                                        Solution Now
+                                                        Certified in Canada</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read press release<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/KeepTruckin.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=163">
+                                                    <p class="news-category">Press releases</p>
+                                                </a>
+                                                <p class="news-date">03/03/2022</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">KeepTruckin Strengthens Board of Directors as
+                                                        Growth
+                                                        Accelerates</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read press release<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/KeepTruckin.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=163">
+                                                    <p class="news-category">Press releases</p>
+                                                </a>
+                                                <p class="news-date">03/17/2022</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">Transportation study: AI significantly
+                                                        reduces accidents
+                                                        and safety incidents</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read press release<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href=""
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2022/11/VentureBeat.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=162">
+                                                    <p class="news-category">Media coverage</p>
+                                                </a>
+                                                <p class="news-date">03/17/2022</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">AI improves driver safety with actionable,
+                                                        real-time
+                                                        insights</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read article<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_blank"
+                                                href="#"
+                                                rel="noreferrer"><img class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2023/10/Newsroom-Motive-Logo-Black@2x.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=163">
+                                                    <p class="news-category">Press releases</p>
+                                                </a>
+                                                <p class="news-date">04/12/2022</p><a target="_blank"
+                                                    href="#"
+                                                    rel="noreferrer">
+                                                    <h4 class="news-title">KeepTruckin rebrands as Motive, launches
+                                                        Automated
+                                                        Operations Platform</h4>
+                                                </a><a target="_blank" class="news-link"
+                                                    href="#"
+                                                    rel="noreferrer">Read press release<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                        <div class="news-article"><a target="_self"
+                                                href="#" rel="noreferrer"><img
+                                                    class="news-image"
+                                                    src="https://gomotive.com/wp-content/uploads/2023/10/Newsroom-Motive-Logo-Black@2x.png"></a>
+                                            <div class="news-content"><a href="/company/news/?category=165">
+                                                    <p class="news-category">Featured blogs</p>
+                                                </a>
+                                                <p class="news-date">04/12/2022</p><a target="_self"
+                                                    href="#" rel="noreferrer">
+                                                    <h4 class="news-title">Meet Motive.</h4>
+                                                </a><a target="_self" class="news-link"
+                                                    href="#" rel="noreferrer">Read
+                                                    blog<img
+                                                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjQwMzYgOC4zNjUyM0wtNS44Njc4MWUtMDUgOC4zNjUyMyIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNNy40OTM5NCAwLjg2Nzk3NUwxNC45NyA4LjM1Mjk4TDcuNDkzOTQgMTUuODM3OSIgc3Ryb2tlPSIjMDAzNDkyIiBzdHJva2Utd2lkdGg9IjEuNDg4NjciIHN0cm9rZS1saW5lam9pbj0iYmV2ZWwiLz4KPC9zdmc+Cg=="></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="mt_pagination"><button class="page-numbers prev" id="prev-button"
+                                            disabled=""><i class="chevron c-left"></i></button><button
+                                            class="page-numbers active">1</button><button
+                                            class="page-numbers false">2</button><button
+                                            class="page-numbers false">3</button><button
+                                            class="page-numbers false">4</button><button
+                                            class="page-numbers false">5</button><button
+                                            class="page-numbers false">6</button><button
+                                            class="page-numbers false">7</button><button
+                                            class="page-numbers false">8</button><button
+                                            class="page-numbers false">9</button><button
+                                            class="page-numbers false">10</button><button
+                                            class="page-numbers false">11</button><button
+                                            class="page-numbers false">12</button><button
+                                            class="page-numbers false">13</button><button
+                                            class="page-numbers false">14</button><button class="page-numbers next"
+                                            id="next-button"><i class="chevron c-right"></i></button></div> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="wp-block-phoenix-blocks-grid-col col col-md-1 col-sm-1 col-1"></div>
+
+
+
+                        <div class="wp-block-phoenix-blocks-grid-col col col-md-3 col-sm-12 col-12 p-0"
+                            id="news-categories">
+                            <div class="wp-block-motive-newsroom-categories container p-0">
+                                <div>
+                                    <div class="categories-title">
+                                        <h4>Categories</h4>
+                                    </div>
+                                    <div class="categories-link"><a class="is-selected">All (108)</a><a class="">Media
+                                            coverage
+                                            (59)</a><a class="">Press releases (44)</a><a class="">Awards/Accolades
+                                            (4)</a><a class="">Featured blogs (1)</a></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wp-block-phoenix-blocks-grid container d-none d-sm-none d-md-block p-0">
+                                <div
+                                    class="wp-block-phoenix-blocks-grid-row row align-items-stretch justify-content-start">
+                                    <div class="wp-block-phoenix-blocks-grid-col col"
+                                        style="border-style:solid;border-top-width:1px;border-right-width:0px;border-bottom-width:1px;border-left-width:0px;border-radius:0;border-color:#cccccc">
+                                        <div class="wp-block-phoenix-blocks-spacer h1-and-subtitle-spacing"
+                                            style="min-height:initial;--tablet-section-height:initial;--mobile-section-height:initial">
+                                        </div>
+
+
+
+                                        <h5 class="wp-block-heading has-phoenix-black-color has-text-color"
+                                            id="h-press-and-media-inquiries" style="font-style:normal;font-weight:300">
+                                            Press and
+                                            media inquiries</h5>
+
+
+
+                                        <h5 class="wp-block-heading h-press"><a
+                                                href="mailto:press@gomotive.com">press@gomotive.com</a></h5>
+
+
+
+                                        <h5 class="wp-block-heading h-press"><a
+                                                href="#" target="_blank"
+                                                rel="noreferrer noopener">Media kit</a></h5>
+
+
+
+                                        <div class="wp-block-phoenix-blocks-spacer image-and-body-spacing"
+                                            style="min-height:initial;--tablet-section-height:initial;--mobile-section-height:initial">
+                                        </div>
+
+
+
+                                        <h5 class="wp-block-heading" id="h-follow-us">Follow us</h5>
+
+
+
+                                        <div
+                                            class="wp-block-group align-items-stretch is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-45 wp-block-group-is-layout-flex ">
+                                            <div
+                                                class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-44 wp-block-group-is-layout-flex d-flex">
+                                                <div class="wp-block-outermost-icon-block social-icons"><a
+                                                        class="icon-container has-icon-background-color has-phoenix-white-background-color"
+                                                        href="#" target="_blank"
+                                                        rel="noreferrer noopener"
+                                                        style="background-color:#ffffff;width:48px"><svg width="49"
+                                                            height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="0.5" width="48" height="48" fill="white"></rect>
+                                                            <g clip-path="url(#clip0_765_30039)">
+                                                                <rect width="20" height="20"
+                                                                    transform="translate(14.5 14)" fill="none"></rect>
+                                                                <path
+                                                                    d="M31.5914 19.9937C31.603 20.1678 31.603 20.3419 31.603 20.5175C31.603 25.8701 27.6732 32.0433 20.4875 32.0433C18.3649 32.0458 16.2864 31.4151 14.5 30.2264C14.8081 30.2647 15.118 30.2843 15.4283 30.285C17.1877 30.2864 18.8965 29.6745 20.2802 28.5476C19.4649 28.5318 18.6748 28.2521 18.0204 27.7478C17.366 27.2434 16.88 26.5395 16.6304 25.7345C17.2157 25.8515 17.8192 25.8277 18.3942 25.6648C17.51 25.4798 16.7148 24.9833 16.1435 24.2596C15.5721 23.5359 15.2599 22.6295 15.2596 21.6942V21.6429C15.8029 21.9569 16.411 22.1307 17.0327 22.1499C16.2057 21.5771 15.6204 20.699 15.3957 19.6945C15.1711 18.69 15.3241 17.6344 15.8236 16.7427C16.8043 17.9942 18.028 19.0177 19.4151 19.7468C20.8022 20.4759 22.3218 20.8943 23.875 20.9747C23.7202 20.2835 23.7431 19.5622 23.9414 18.8831C24.1398 18.2039 24.5066 17.5906 25.0052 17.1045C25.7607 16.3681 26.7674 15.9729 27.8038 16.0058C28.8403 16.0388 29.8217 16.4971 30.5324 17.2802C31.407 17.1013 32.2457 16.769 33.0124 16.2976C32.7207 17.2355 32.1105 18.0316 31.2951 18.5379C32.0695 18.4431 32.8257 18.2281 33.5385 17.9002C33.0137 18.7135 32.3537 19.4235 31.5891 19.997L31.5914 19.9937Z"
+                                                                    fill="black"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_765_30039">
+                                                                    <rect width="20" height="20" fill="none"
+                                                                        transform="translate(14.5 14)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg></a></div>
+
+
+
+                                                <div class="wp-block-outermost-icon-block social-icons"><a
+                                                        class="icon-container"
+                                                        href="#"
+                                                        target="_blank" rel="noreferrer noopener"
+                                                        style="width:48px"><svg width="49" height="48"
+                                                            viewBox="0 0 49 48" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="1" y="0.5" width="47" height="47" fill="white">
+                                                            </rect>
+                                                            <rect x="0.5" width="48" height="48" fill="white"></rect>
+                                                            <path
+                                                                d="M16.5 17.1939C16.5019 17.0351 16.5353 16.8783 16.5982 16.7323C16.6612 16.5863 16.7525 16.4541 16.8669 16.3433C16.9813 16.2324 17.1166 16.145 17.265 16.0862C17.4134 16.0273 17.5721 15.9981 17.7319 16.0002H31.9305C32.0907 15.9972 32.25 16.0258 32.399 16.0843C32.5481 16.1428 32.6841 16.2301 32.799 16.3411C32.914 16.452 33.0057 16.5845 33.0689 16.7309C33.1321 16.8773 33.1655 17.0347 33.1671 17.1939V31.4672C33.1655 31.6259 33.1323 31.7827 33.0695 31.9287C33.0067 32.0746 32.9156 32.2069 32.8013 32.3177C32.687 32.4286 32.5518 32.516 32.4035 32.5749C32.2552 32.6338 32.0966 32.663 31.9369 32.6609H17.7383C17.5786 32.663 17.4201 32.6339 17.2718 32.5751C17.1235 32.5163 16.9883 32.4291 16.8739 32.3184C16.7595 32.2077 16.6682 32.0757 16.6051 31.9299C16.5421 31.7841 16.5085 31.6275 16.5064 31.4688V17.1923L16.5 17.1939Z"
+                                                                fill="black"></path>
+                                                            <path
+                                                                d="M21.5559 29.9468V22.424H19.039V29.9468H21.5559ZM20.2982 21.3969C21.1754 21.3969 21.722 20.8185 21.722 20.0975C21.722 19.3764 21.1754 18.7964 20.3144 18.7964C19.4533 18.7964 18.8906 19.3588 18.8906 20.0975C18.8906 20.8361 19.4372 21.3969 20.2805 21.3969H20.2982ZM22.949 29.9468H25.4643V25.7455C25.4546 25.5393 25.4824 25.3331 25.5465 25.1367C25.6405 24.8707 25.8149 24.6401 26.0458 24.4763C26.2766 24.3126 26.5528 24.2237 26.8364 24.2218C27.7474 24.2218 28.1118 24.9108 28.1118 25.9234V29.9468H30.6271V25.6382C30.6271 23.3277 29.3872 22.2525 27.7248 22.2525C26.3672 22.2525 25.7706 23.0056 25.4401 23.52H25.4562V22.4288H22.9409C22.9732 23.1338 22.9409 29.9516 22.9409 29.9516L22.949 29.9468Z"
+                                                                fill="white"></path>
+                                                            <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                                                            </rect>
+                                                        </svg></a></div>
+
+
+
+                                                <div class="wp-block-outermost-icon-block social-icons"><a
+                                                        class="icon-container"
+                                                        href="#" target="_blank"
+                                                        rel="noreferrer noopener" style="width:48px"><svg width="49"
+                                                            height="48" viewBox="0 0 49 48" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="0.5" width="48" height="48" fill="white"></rect>
+                                                            <path
+                                                                d="M32.4034 23.9402C32.4014 21.833 31.5626 19.8128 30.0715 18.3238C28.5803 16.8348 26.559 15.999 24.4517 16C22.3428 16 20.3202 16.8378 18.829 18.329C17.3378 19.8202 16.5 21.8428 16.5 23.9517C16.5004 25.8453 17.1766 27.6765 18.4068 29.116C19.6371 30.5555 21.3407 31.5087 23.2111 31.8041V26.2498H21.1916V23.9593H23.2111V22.2071C23.2111 20.2144 24.3983 19.1112 26.2154 19.1112C26.8114 19.1198 27.4059 19.1721 27.9943 19.2677V21.2261H26.9903C26.0016 21.2261 25.6962 21.8368 25.6962 22.4667V23.9593H27.8988L27.5476 26.2498H25.6962V31.8041C27.5658 31.5079 29.2685 30.5543 30.498 29.1149C31.7275 27.6755 32.4031 25.8447 32.4034 23.9517V23.9402Z"
+                                                                fill="black"></path>
+                                                            <path
+                                                                d="M27.5357 26.2494L27.8869 23.959H25.6843V22.4663C25.6843 21.8365 25.9897 21.2257 26.9784 21.2257H27.9824V19.2674C27.394 19.1717 26.7994 19.1194 26.2034 19.1108C24.3863 19.1108 23.1991 20.2141 23.1991 22.2068V23.959H21.1797V26.2494H23.1991V31.8038C23.6094 31.8698 24.0242 31.903 24.4398 31.903C24.8566 31.903 25.2727 31.8698 25.6843 31.8038V26.2494H27.5357Z"
+                                                                fill="white"></path>
+                                                            <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                                                            </rect>
+                                                        </svg></a></div>
+
+
+
+                                                <div class="wp-block-outermost-icon-block social-icons"><a
+                                                        class="icon-container"
+                                                        href="#"
+                                                        target="_blank" rel="noreferrer noopener"
+                                                        style="width:48px"><svg width="49" height="48"
+                                                            viewBox="0 0 49 48" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="0.5" width="48" height="48" fill="white"></rect>
+                                                            <rect width="20" height="20" transform="translate(14.5 14)"
+                                                                fill="white"></rect>
+                                                            <path
+                                                                d="M32.3857 19.7734C32.1991 19.0757 31.6491 18.5257 30.9514 18.3391C29.6859 18 24.6124 18 24.6124 18C24.6124 18 19.5389 18 18.2734 18.3391C17.5757 18.5257 17.0257 19.0757 16.8391 19.7734C16.5 21.0389 16.5 24.4899 16.5 24.4899C16.5 24.4899 16.5 27.9409 16.8391 29.2065C17.0257 29.9041 17.5757 30.4541 18.2734 30.6407C19.5389 30.9798 24.6124 30.9798 24.6124 30.9798C24.6124 30.9798 29.6859 30.9798 30.9514 30.6407C31.6499 30.4541 32.1991 29.9041 32.3857 29.2065C32.7248 27.9409 32.7248 24.4899 32.7248 24.4899C32.7248 24.4899 32.7248 21.0389 32.3857 19.7734ZM22.9899 26.5975V22.3823C22.9899 22.07 23.3282 21.8753 23.5983 22.031L27.2489 24.1386C27.5191 24.2944 27.5191 24.6854 27.2489 24.8412L23.5983 26.9488C23.3282 27.1053 22.9899 26.9098 22.9899 26.5975Z"
+                                                                fill="black"></path>
+                                                            <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                                                            </rect>
+                                                        </svg></a></div>
+
+
+
+                                                <div class="wp-block-outermost-icon-block social-icons"><a
+                                                        class="icon-container"
+                                                        href="#" target="_blank"
+                                                        rel="noreferrer noopener" style="width:48px"><svg width="49"
+                                                            height="48" viewBox="0 0 49 48" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="0.5" width="48" height="48" fill="white"></rect>
+                                                            <g clip-path="url(#clip0_765_30046)">
+                                                                <path
+                                                                    d="M21.974 16.8204C19.5589 16.8204 17.5944 18.7868 17.5944 21.2026V27.461C17.5944 29.8761 19.5607 31.8406 21.9765 31.8406H28.2349C30.65 31.8406 32.6146 29.8743 32.6146 27.4585V21.2001C32.6146 18.785 30.6482 16.8204 28.2325 16.8204H21.974ZM29.4854 19.3238C29.8308 19.3238 30.1112 19.6042 30.1112 19.9496C30.1112 20.2951 29.8308 20.5755 29.4854 20.5755C29.1399 20.5755 28.8595 20.2951 28.8595 19.9496C28.8595 19.6042 29.1399 19.3238 29.4854 19.3238ZM25.1045 20.5755C27.1754 20.5755 28.8595 22.2596 28.8595 24.3305C28.8595 26.4015 27.1754 28.0856 25.1045 28.0856C23.0336 28.0856 21.3494 26.4015 21.3494 24.3305C21.3494 22.2596 23.0336 20.5755 25.1045 20.5755ZM25.1045 21.8272C24.4405 21.8272 23.8038 22.0909 23.3343 22.5604C22.8648 23.0299 22.6011 23.6666 22.6011 24.3305C22.6011 24.9945 22.8648 25.6312 23.3343 26.1007C23.8038 26.5702 24.4405 26.8339 25.1045 26.8339C25.7684 26.8339 26.4051 26.5702 26.8746 26.1007C27.3441 25.6312 27.6078 24.9945 27.6078 24.3305C27.6078 23.6666 27.3441 23.0299 26.8746 22.5604C26.4051 22.0909 25.7684 21.8272 25.1045 21.8272Z"
+                                                                    fill="black"></path>
+                                                            </g>
+                                                            <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                                                            </rect>
+                                                            <defs>
+                                                                <clipPath id="clip0_765_30046">
+                                                                    <rect width="16" height="16" fill="white"
+                                                                        transform="translate(17.1049 16.3304)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg></a></div>
+                                            </div>
+
+
+
+                                            <div class="wp-block-phoenix-blocks-spacer image-and-body-spacing"
+                                                style="min-height:initial;--tablet-section-height:initial;--mobile-section-height:initial">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-theme-settings">
+                    <div class="tp-theme-settings-wrapper">
+                       <div class="tp-theme-settings-open">
+                          <button class="tp-theme-settings-open-btnsss">
+                             <span class="tp-theme-settings-gearss">
+                              <img src="assets/img/avatar/whatsapp (1).png" alt="gear icon" style="width:45px"></a>
+                             </span>
+                          </button>
+                       </div>
+                    </div>
+                 </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/js/footer.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script>
+        var swiper = new Swiper(".myNewsroomSwiper", {
+          loop: true,
+          pauseOnHover: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+</body>
+
+</html>

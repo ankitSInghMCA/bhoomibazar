@@ -3591,7 +3591,7 @@ function tp_settings_append($x){
        </div>
 
        <!--SETTINGS -->
-       <div class="tp-theme-settings">
+       <!--<div class="tp-theme-settings">
           <div class="tp-theme-settings-wrapper">
              <div class="tp-theme-settings-open">
                 <button class="tp-theme-settings-open-btn">
@@ -3600,6 +3600,19 @@ function tp_settings_append($x){
                    </span>
                    <span class="tp-theme-settings-close">
                       <i class="fa-regular fa-xmark"></i>
+                   </span>
+                </button>
+             </div>
+          </div>
+       </div> -->
+
+	   <!-- SETTINGS new one -->
+	   <div class="tp-theme-settings">
+          <div class="tp-theme-settings-wrapper">
+             <div class="tp-theme-settings-open">
+                <button class="tp-theme-settings-open-btnsss">
+                   <span class="tp-theme-settings-gearss">
+                    <img src="assets/img/avatar/whatsapp (1).png" alt="gear icon" style="width:45px"></a>
                    </span>
                 </button>
              </div>

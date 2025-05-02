@@ -21,6 +21,97 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/custom-animation.css">
    <link rel="stylesheet" href="assets/css/main.css">
+       <!-- Bootstrap Icons -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+   <style>
+    body {
+        background: linear-gradient(135deg, #023047 0%, #220b4e 100%);
+        color: white;
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar {
+        background-color: transparent !important;
+        padding: 20px 0;
+    }
+    
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    
+    .form-control {
+        border-radius: 8px;
+        padding: 12px;
+        border: none;
+    }
+    
+    .message-area {
+        min-height: 150px;
+    }
+    
+    .submit-btn {
+        background-color: #6c5ce7;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        background-color: #5649c0;
+        transform: translateY(-2px);
+    }
+    
+    .heading {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
+    .accent-text {
+        color: #00e3d9;
+    }
+    
+    .contact-info {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 20px;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background-color: #00b2a9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    
+    .wave-decoration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 250px;
+        height: 100px;
+        opacity: 0.7;
+    }
+    
+    @media (max-width: 768px) {
+        .heading {
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            padding: 0 20px;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -31,18 +122,18 @@
 
    <!-- pre loader area start -->
    <div id="loading" class="preloader-wrap">
-      <div class="preloader-2 text-center">
-         <span class="line line-1"></span>
-         <span class="line line-2"></span>
-         <span class="line line-3"></span>
-         <span class="line line-4"></span>
-         <span class="line line-5"></span>
-         <span class="line line-6"></span>
-         <span class="line line-7"></span>
-         <span class="line line-8"></span>
-         <span class="line line-9"></span>
-         <div class="loader-text">Loading ...</div>
-      </div>
+		<div class="preloader-2 text-center">
+			<span class="line line-1"></span>
+			<span class="line line-2"></span>
+			<span class="line line-3"></span>
+			<span class="line line-4"></span>
+			<span class="line line-5"></span>
+			<span class="line line-6"></span>
+			<span class="line line-7"></span>
+			<span class="line line-8"></span>
+			<span class="line line-9"></span>
+			<div class="loader-text">Loading ...</div>
+		</div>
    </div>
    <!-- pre loader area end -->
 
@@ -62,8 +153,8 @@
       <div class="tp-offcanvas-wrapper">
          <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div class="tp-offcanvas-logo">
-               <a href="index-3.html">
-                  <img class="logo-1" style="width: 75%;" src="assets/img/logo/1.svg" alt="">
+               <a href="index.html">
+                  <img class="logo-1" src="assets/img/logo/1.svg" style="width: 75%;" alt="">
                   <img class="logo-2" src="assets/img/logo/logo-white.png" alt="">
                </a>
             </div>
@@ -232,210 +323,127 @@
    </div>
    <!-- cart mini area end -->
 
-   <script src="assets/js/header.js"></script>
+  <script src="assets/js/header.js"></script>
    
+   <!-- Modal -->
+   <div class="modal-wrapper p-relative" data-background="assets/img/home-01/team/team-details-bg.png">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <!-- team-details area start -->
+                  <div class="tm-details-wrapper p-relative">
+                     <div class="tm-details-shape-1">
+                        <img src="assets/img/home-01/team/team-details-shape-1.png" alt="">
+                     </div>
+                     <div class="tm-details-shape-2">
+                        <img src="assets/img/home-01/team/team-details-shape-2.png" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="row align-items-center align-items-xxl-end">
+                           <div class="col-xl-6 col-lg-6 col-md-7">
+                              <div class="tm-details-content-wrap z-index-5">
+                                 <div class="tm-details-title-box mb-20">
+                                    <span class="tm-hero-subtitle">Illustrator</span>
+                                    <h4 class="tm-details-title">Jassica Oliver</h4>
+                                 </div>
+                                 <div class="tm-details-text">
+                                    <p>I'm an illustrator, working for brands. My work is fuelled by my observing nature and ongoing curiosity, utilizing simple shapes to tell all sorts of stories. My clear signature applies to both my personal work as well as my commercial commissions. Among my clients are Google, The New York Times, The New Yorker, Facebook, Vogue, TED and Twitter. Oh and I like to paint. Which still feels very new to me and slows me down.</p>
+                                 </div>
+                                 <div class="tm-details-portfolio mb-50">
+                                    <span class="tm-details-social-title">Portfolio:</span>
+                                    <a href="#">Behance</a>
+                                    <a href="#">Dribbble</a>
+                                    <a href="#">Meduim</a>
+                                 </div>
+                                 <div class="tm-details-social">
+                                    <span class="tm-details-social-title">Follow:</span>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-5">
+                              <div class="tm-details-thumb">
+                                 <img src="assets/img/home-01/team/team-details-1.png" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- team-details area end -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Modal -->
 
    <div id="smooth-wrapper">
       <div id="smooth-content">
 
-         <div class="inner-bg" data-background="assets/img/home-01/team/team-details-bg.png">
+         <main>
+
+               <!-- Main Content -->
+    <div class="container mt-4 pt-110 pb-4">
+        <div class="row align-items-center">
+            <!-- Contact Form -->
+            <div class="col-lg-6 mb-5">
+                <h1 class="heading text-white">Let's work together!</h1>
+                
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control message-area" id="message" rows="5"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn submit-btn text-white">Submit</button>
+                </form>
+            </div>
             
-            <main>
-   
-               <!-- hero area start -->
-               <div class="tm-hero-area tm-hero-ptb">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-xl-12">
-                           <div class="tm-hero-content">
-                              <span class="tm-hero-subtitle">Liko Studio</span>
-                              <h4 class="tm-hero-title tp-char-animation">FAQ Page</h4>
-                           </div>
-                           <div class="tm-hero-text tp_title_anim">
-                              <p>
-                                 Frequently asked question (FAQ)pages<br>
-                                 to find answars.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- hero area end -->
+            <!-- Contact Info -->
+            <div class="col-lg-6 ps-lg-5">
+                <h2 class="display-4 mb-3 text-white">Simply Mail <span class="accent-text">Us</span></h2>
+                <p class="mb-5">For questions, technical assistance, or collaboration opportunities via the contact information provided.</p>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="contact-icon me-3">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                        <p class="mb-0 fs-5">hello@Bhumibazar.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
 
-               <!-- faq area start -->
-               <div class="fq-faq-area fq-faq-bdr pt-80 pb-140">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-xl-8 col-lg-8">
-                           <div class="fq-faq-wrapper">
-                              <div class="tp-service-2-accordion-box">
-                                 <div class="accordion" id="accordionExample">
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                             What we do?
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseOne" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                             How we do it?
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseTwo" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                             How  can i download the products?
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseThree" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                             Free Shipping  & Return Order
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseFour" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                             Payment options
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseFive" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-items">
-                                       <h2 class="accordion-header">
-                                          <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                             Payment options
-                                             <span class="accordion-icon"></span>
-                                          </button>
-                                       </h2>
-                                       <div id="collapseSix" class="accordion-collapse collapse"
-                                          data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
-                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                exercitation ullamco laboris.!
-                                             </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4">
-                           <div class="fq-faq-sidebar">
-                              <div class="fq-faq-sidebar-content">
-                                 <h4 class="fq-faq-sidebar-title">Q&A</h4>
-                                 <p>
-                                    Lorem ipsum dolor sit laud munere
-                                    dicunt detraxit mel, nisl evertitu <br> eu vim.
-                                 </p>
-                              </div>
-                              <div class="fq-faq-sidebar-thumb">
-                                 <img class="w-100" src="assets/img/inner-faq/faq/banner-faq.jpg" alt="">
-                              </div>
-                              <div class="fq-faq-sidebar-input p-relative">
-                                 <input type="text" placeholder="Search product">
-                                 <button class="fq-faq-sidebar-search">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M9.8889 15.2222C5.96154 15.2222 2.7778 12.0385 2.7778 8.1111C2.7778 4.18375 5.96154 1 9.8889 1C13.8163 1 17 4.18375 17 8.1111C17 12.0385 13.8163 15.2222 9.8889 15.2222Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                       <path d="M1.00053 17.0001L4.86719 13.1334" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- faq area end -->
-   
-               <!-- contact area start -->
-               <div class="sv-big-text-area pb-80">
-                  <div class="container container-1530">
-                     <div class="sv-small-text-box d-flex justify-content-between">
-                        <span>DIGITAL DESIGN EXPERIENCE</span>
-                        <span>CREATIVE STUDIO</span>
-                     </div>
-                     <div class="sv-big-text-box">
-                        <h4 class="sv-big-text tp-char-animation"><a href="contact.html">Get in Touch</a></h4>
-                     </div>
-                  </div>
-               </div>
-               <!-- contact area end -->
-   
-            </main>
-   
-            <script src="assets/js/footer.js"></script>
+         </main>
 
-         </div>
+         <script src="assets/js/footer.js"></script>
+         
       </div>
    </div>
    
