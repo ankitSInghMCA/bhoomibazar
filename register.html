@@ -25,7 +25,9 @@
       .tp-login-wrapper{
          background-color: #fff;
          border: 1px solid #E0E2E3;
+         padding: 50px;
       }
+
    </style>
 </head>
 
@@ -252,10 +254,10 @@
             <section class="tp-login-area pt-180 pb-140 p-relative z-index-1 fix">
                <div class="container">
                   <div class="row justify-content-center">
-                     <div class="col-xl-6 col-lg-8">
+                     <div class="col-xl-7 col-lg-9">
                         <div class="tp-login-wrapper">
                            <div class="tp-login-top text-center mb-30">
-                              <h3 class="tp-login-title">Sign Up Liko.</h3>
+                              <h3 class="tp-login-title">Sign Up Bhumibazar.</h3>
                               <p>Don’t have an account? <span><a href="register.html">Sign In</a></span></p>
                            </div>
                            <div class="tp-login-option">
@@ -280,13 +282,15 @@
                               <div class="tp-login-mail text-center mb-40">
                                  <p>or Sign in with <a href="#">Email</a></p>
                               </div>
+
+                              <form action="https://bb.webkype.net/account.html" method="POST">
                               <div class="tp-login-input-wrapper">
                                  <div class="tp-login-input-box">
                                     <div class="tp-login-input-title">
                                        <label for="text">Your Name</label>
                                     </div>
                                     <div class="tp-login-input">
-                                       <input id="text" type="text" placeholder="Your Name">
+                                       <input required id="text" type="text" placeholder="Your Name">
                                     </div>
                                  </div>
                                  <div class="tp-login-input-box">
@@ -294,7 +298,7 @@
                                        <label for="email">Your Email</label>
                                     </div>
                                     <div class="tp-login-input">
-                                       <input id="email" type="email" placeholder="liko@mail.com">
+                                       <input required id="email" type="email" placeholder="liko@mail.com">
                                     </div>
                                  </div>
                                  <div class="tp-login-input-box">
@@ -302,7 +306,7 @@
                                        <label for="tp_password">Password</label>
                                     </div>
                                     <div class="tp-login-input p-relative">
-                                       <input id="tp_password" type="password" placeholder="Min. 6 character">
+                                       <input required id="tp_password" type="password" placeholder="Min. 6 character">
                                        <div class="tp-login-input-eye" id="password-show-toggle">
                                           <span id="open-eye" class="open-eye">
                                              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -326,13 +330,14 @@
                               </div>
                               <div class="tp-login-suggetions d-sm-flex align-items-center justify-content-between mb-20">
                                  <div class="tp-login-remeber">
-                                    <input id="remeber" type="checkbox">
+                                    <input required id="remeber" type="checkbox">
                                     <label for="remeber">I accept the terms of the Service & Privacy Policy.</label>
                                  </div>
                               </div>
                               <div class="tp-login-bottom">
-                                 <a href="profile.html" class="tp-login-btn w-100">Sign Up</a>
+                                 <button type="submit" class="tp-login-btn w-100">Sign Up</button>
                               </div>
+                              </form>
                            </div>
                         </div>
                      </div>

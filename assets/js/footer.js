@@ -68,7 +68,7 @@ document.write(`
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: #e6e6e6;
+          
             display: flex;
             align-items: center;
             justify-content: center;
@@ -79,6 +79,7 @@ document.write(`
         .social-icons a:hover {
             background-color: #ccc;
         }
+          
         .copyright {
            
             color: #1e1e1e;
@@ -124,7 +125,7 @@ document.write(`
     <footer class="footer-section">
         <div class="footer-top mt-0">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row" style="padding-top: 20px;">
                     <div class="col-md-6 border-end">
                         <div class="service-box">
                             <h3>Find Property</h3>
@@ -232,14 +233,24 @@ document.write(`
                           </a>
             </div>
             
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
+ <div class="social-icons">
+               <a href="#">
+            <img src="assets/img/logo/2023_Facebook_icon.svg" alt="">
+            </a>
+               <a href="#">
+                  <img src="assets/img/logo/X_icon.svg" alt="">
+               </a>
+               <a href="#">
+                  <img src="assets/img/logo/Instagram_logo_2016.svg" alt="">
+               </a>
+               <a href="#">
+                  <img src="assets/img/logo/LinkedIn_icon.svg" alt="">
+               </a>
+               
+               <a href="#">
+                  <img src="assets/img/logo/youtube-svgrepo-com.svg" alt="">
+               </a>
+           </div>
         
         <div class="copyright">
             <div class="container">
