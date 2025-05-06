@@ -25,23 +25,13 @@
        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
    <style>
     body {
-        background: linear-gradient(135deg, #023047 0%, #220b4e 100%);
+        /* background: linear-gradient(135deg, #023047 0%, #220b4e 100%);
         color: white;
         min-height: 100vh;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     }
     
-    .navbar {
-        background-color: transparent !important;
-        padding: 20px 0;
-    }
-    
-    .navbar-nav .nav-link {
-        color: white !important;
-        font-size: 18px;
-        margin: 0 15px;
-    }
-    
+
     .form-control {
         border-radius: 8px;
         padding: 12px;
@@ -390,31 +380,37 @@
 
                <!-- Main Content -->
     <div class="container mt-4 pt-110 pb-4">
-        <div class="row align-items-center">
+        <div class="row position-relative">
+            <h4 class="tp-section-title-90 tp_text_invert tp_fade_bottom">
+                Let's work together!
+            </h4>
+         </div>
+        <div class="row  pt-30">
             <!-- Contact Form -->
             <div class="col-lg-6 mb-5">
-                <h1 class="heading text-white">Let's work together!</h1>
+                
+                
                 
                 <form>
                     <div class="mb-4">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label fw-bold">Name</label>
                         <input type="text" class="form-control" id="name">
                     </div>
                     
                     <div class="row mb-4">
                         <div class="col-md-6 mb-3 mb-md-0">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label fw-bold">Email</label>
                             <input type="email" class="form-control" id="email">
                         </div>
                         <div class="col-md-6">
-                            <label for="phone" class="form-label">Phone Number</label>
+                            <label for="phone" class="form-label fw-bold">Phone Number</label>
                             <input type="tel" class="form-control" id="phone">
                         </div>
                     </div>
                     
                     <div class="mb-4">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control message-area" id="message" rows="5"></textarea>
+                        <label for="message" class="form-label fw-bold">Message</label>
+                        <textarea class="form-control " id="message" rows="5" style="border: 1px solid #E0E2E3;"></textarea>
                     </div>
                     
                     <button type="submit" class="btn submit-btn text-white">Submit</button>
@@ -423,12 +419,12 @@
             
             <!-- Contact Info -->
             <div class="col-lg-6 ps-lg-5">
-                <h2 class="display-4 mb-3 text-white">Simply Mail <span class="accent-text">Us</span></h2>
+                <h2 class="display-4 mb-3" style="color: #1E1E1E;">Simply Mail <span class="accent-text" style="color: #ff0009;">Us</span></h2>
                 <p class="mb-5">For questions, technical assistance, or collaboration opportunities via the contact information provided.</p>
                 
                 <div class="d-flex align-items-center mb-4">
-                    <div class="contact-icon me-3">
-                        <i class="bi bi-envelope-fill"></i>
+                    <div class="contact-icon me-3" style="background-color: #ff0009;">
+                        <i class="bi bi-envelope-fill text-white"></i>
                     </div>
                     <div>
                         <p class="mb-0 fs-5">hello@Bhumibazar.com</p>
@@ -436,6 +432,61 @@
                 </div>
             </div>
         </div>
+        <!-- <div>
+            <svg width="49" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" width="48" height="48" fill="white"></rect>
+                <g clip-path="url(#clip0_765_30039)">
+                    <rect width="20" height="20" transform="translate(14.5 14)" fill="none"></rect>
+                    <path d="M31.5914 19.9937C31.603 20.1678 31.603 20.3419 31.603 20.5175C31.603 25.8701 27.6732 32.0433 20.4875 32.0433C18.3649 32.0458 16.2864 31.4151 14.5 30.2264C14.8081 30.2647 15.118 30.2843 15.4283 30.285C17.1877 30.2864 18.8965 29.6745 20.2802 28.5476C19.4649 28.5318 18.6748 28.2521 18.0204 27.7478C17.366 27.2434 16.88 26.5395 16.6304 25.7345C17.2157 25.8515 17.8192 25.8277 18.3942 25.6648C17.51 25.4798 16.7148 24.9833 16.1435 24.2596C15.5721 23.5359 15.2599 22.6295 15.2596 21.6942V21.6429C15.8029 21.9569 16.411 22.1307 17.0327 22.1499C16.2057 21.5771 15.6204 20.699 15.3957 19.6945C15.1711 18.69 15.3241 17.6344 15.8236 16.7427C16.8043 17.9942 18.028 19.0177 19.4151 19.7468C20.8022 20.4759 22.3218 20.8943 23.875 20.9747C23.7202 20.2835 23.7431 19.5622 23.9414 18.8831C24.1398 18.2039 24.5066 17.5906 25.0052 17.1045C25.7607 16.3681 26.7674 15.9729 27.8038 16.0058C28.8403 16.0388 29.8217 16.4971 30.5324 17.2802C31.407 17.1013 32.2457 16.769 33.0124 16.2976C32.7207 17.2355 32.1105 18.0316 31.2951 18.5379C32.0695 18.4431 32.8257 18.2281 33.5385 17.9002C33.0137 18.7135 32.3537 19.4235 31.5891 19.997L31.5914 19.9937Z" fill="black"></path>
+                </g>
+                <defs>
+                    <clipPath id="clip0_765_30039">
+                        <rect width="20" height="20" fill="none" transform="translate(14.5 14)"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="0.5" width="47" height="47" fill="white">
+                </rect>
+                <rect x="0.5" width="48" height="48" fill="white"></rect>
+                <path d="M16.5 17.1939C16.5019 17.0351 16.5353 16.8783 16.5982 16.7323C16.6612 16.5863 16.7525 16.4541 16.8669 16.3433C16.9813 16.2324 17.1166 16.145 17.265 16.0862C17.4134 16.0273 17.5721 15.9981 17.7319 16.0002H31.9305C32.0907 15.9972 32.25 16.0258 32.399 16.0843C32.5481 16.1428 32.6841 16.2301 32.799 16.3411C32.914 16.452 33.0057 16.5845 33.0689 16.7309C33.1321 16.8773 33.1655 17.0347 33.1671 17.1939V31.4672C33.1655 31.6259 33.1323 31.7827 33.0695 31.9287C33.0067 32.0746 32.9156 32.2069 32.8013 32.3177C32.687 32.4286 32.5518 32.516 32.4035 32.5749C32.2552 32.6338 32.0966 32.663 31.9369 32.6609H17.7383C17.5786 32.663 17.4201 32.6339 17.2718 32.5751C17.1235 32.5163 16.9883 32.4291 16.8739 32.3184C16.7595 32.2077 16.6682 32.0757 16.6051 31.9299C16.5421 31.7841 16.5085 31.6275 16.5064 31.4688V17.1923L16.5 17.1939Z" fill="black"></path>
+                <path d="M21.5559 29.9468V22.424H19.039V29.9468H21.5559ZM20.2982 21.3969C21.1754 21.3969 21.722 20.8185 21.722 20.0975C21.722 19.3764 21.1754 18.7964 20.3144 18.7964C19.4533 18.7964 18.8906 19.3588 18.8906 20.0975C18.8906 20.8361 19.4372 21.3969 20.2805 21.3969H20.2982ZM22.949 29.9468H25.4643V25.7455C25.4546 25.5393 25.4824 25.3331 25.5465 25.1367C25.6405 24.8707 25.8149 24.6401 26.0458 24.4763C26.2766 24.3126 26.5528 24.2237 26.8364 24.2218C27.7474 24.2218 28.1118 24.9108 28.1118 25.9234V29.9468H30.6271V25.6382C30.6271 23.3277 29.3872 22.2525 27.7248 22.2525C26.3672 22.2525 25.7706 23.0056 25.4401 23.52H25.4562V22.4288H22.9409C22.9732 23.1338 22.9409 29.9516 22.9409 29.9516L22.949 29.9468Z" fill="white"></path>
+                <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                </rect>
+            </svg>
+
+            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" width="48" height="48" fill="white"></rect>
+                <path d="M32.4034 23.9402C32.4014 21.833 31.5626 19.8128 30.0715 18.3238C28.5803 16.8348 26.559 15.999 24.4517 16C22.3428 16 20.3202 16.8378 18.829 18.329C17.3378 19.8202 16.5 21.8428 16.5 23.9517C16.5004 25.8453 17.1766 27.6765 18.4068 29.116C19.6371 30.5555 21.3407 31.5087 23.2111 31.8041V26.2498H21.1916V23.9593H23.2111V22.2071C23.2111 20.2144 24.3983 19.1112 26.2154 19.1112C26.8114 19.1198 27.4059 19.1721 27.9943 19.2677V21.2261H26.9903C26.0016 21.2261 25.6962 21.8368 25.6962 22.4667V23.9593H27.8988L27.5476 26.2498H25.6962V31.8041C27.5658 31.5079 29.2685 30.5543 30.498 29.1149C31.7275 27.6755 32.4031 25.8447 32.4034 23.9517V23.9402Z" fill="black"></path>
+                <path d="M27.5357 26.2494L27.8869 23.959H25.6843V22.4663C25.6843 21.8365 25.9897 21.2257 26.9784 21.2257H27.9824V19.2674C27.394 19.1717 26.7994 19.1194 26.2034 19.1108C24.3863 19.1108 23.1991 20.2141 23.1991 22.2068V23.959H21.1797V26.2494H23.1991V31.8038C23.6094 31.8698 24.0242 31.903 24.4398 31.903C24.8566 31.903 25.2727 31.8698 25.6843 31.8038V26.2494H27.5357Z" fill="white"></path>
+                <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                </rect>
+            </svg>
+
+            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" width="48" height="48" fill="white"></rect>
+                <rect width="20" height="20" transform="translate(14.5 14)" fill="white"></rect>
+                <path d="M32.3857 19.7734C32.1991 19.0757 31.6491 18.5257 30.9514 18.3391C29.6859 18 24.6124 18 24.6124 18C24.6124 18 19.5389 18 18.2734 18.3391C17.5757 18.5257 17.0257 19.0757 16.8391 19.7734C16.5 21.0389 16.5 24.4899 16.5 24.4899C16.5 24.4899 16.5 27.9409 16.8391 29.2065C17.0257 29.9041 17.5757 30.4541 18.2734 30.6407C19.5389 30.9798 24.6124 30.9798 24.6124 30.9798C24.6124 30.9798 29.6859 30.9798 30.9514 30.6407C31.6499 30.4541 32.1991 29.9041 32.3857 29.2065C32.7248 27.9409 32.7248 24.4899 32.7248 24.4899C32.7248 24.4899 32.7248 21.0389 32.3857 19.7734ZM22.9899 26.5975V22.3823C22.9899 22.07 23.3282 21.8753 23.5983 22.031L27.2489 24.1386C27.5191 24.2944 27.5191 24.6854 27.2489 24.8412L23.5983 26.9488C23.3282 27.1053 22.9899 26.9098 22.9899 26.5975Z" fill="black"></path>
+                <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                </rect>
+            </svg>
+
+
+            <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" width="48" height="48" fill="white"></rect>
+                <g clip-path="url(#clip0_765_30046)">
+                    <path d="M21.974 16.8204C19.5589 16.8204 17.5944 18.7868 17.5944 21.2026V27.461C17.5944 29.8761 19.5607 31.8406 21.9765 31.8406H28.2349C30.65 31.8406 32.6146 29.8743 32.6146 27.4585V21.2001C32.6146 18.785 30.6482 16.8204 28.2325 16.8204H21.974ZM29.4854 19.3238C29.8308 19.3238 30.1112 19.6042 30.1112 19.9496C30.1112 20.2951 29.8308 20.5755 29.4854 20.5755C29.1399 20.5755 28.8595 20.2951 28.8595 19.9496C28.8595 19.6042 29.1399 19.3238 29.4854 19.3238ZM25.1045 20.5755C27.1754 20.5755 28.8595 22.2596 28.8595 24.3305C28.8595 26.4015 27.1754 28.0856 25.1045 28.0856C23.0336 28.0856 21.3494 26.4015 21.3494 24.3305C21.3494 22.2596 23.0336 20.5755 25.1045 20.5755ZM25.1045 21.8272C24.4405 21.8272 23.8038 22.0909 23.3343 22.5604C22.8648 23.0299 22.6011 23.6666 22.6011 24.3305C22.6011 24.9945 22.8648 25.6312 23.3343 26.1007C23.8038 26.5702 24.4405 26.8339 25.1045 26.8339C25.7684 26.8339 26.4051 26.5702 26.8746 26.1007C27.3441 25.6312 27.6078 24.9945 27.6078 24.3305C27.6078 23.6666 27.3441 23.0299 26.8746 22.5604C26.4051 22.0909 25.7684 21.8272 25.1045 21.8272Z" fill="black"></path>
+                </g>
+                <rect x="1" y="0.5" width="47" height="47" stroke="white">
+                </rect>
+                <defs>
+                    <clipPath id="clip0_765_30046">
+                        <rect width="16" height="16" fill="white" transform="translate(17.1049 16.3304)"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div> -->
     </div>
     
   

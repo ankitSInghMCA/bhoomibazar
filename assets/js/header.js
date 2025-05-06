@@ -306,8 +306,8 @@ document.write(`
                                                                <li><a href="faq.html"> Support/FAQ</a></li>
                                                               
                                                                <li><a href="team-details.html">Investor Relations</a></li>
-                                                               <li><a href="register.html">Privacy Policy</a></li>
-                                                               <li><a href="service.html">Terms & Conditions</a></li>
+                                                               <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                               <li><a href="term-condition.html">Terms & Conditions</a></li>
                                                               
                                                             </ul>
                                                          </div>
